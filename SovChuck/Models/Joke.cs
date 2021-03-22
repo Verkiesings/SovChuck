@@ -1,5 +1,4 @@
-﻿using System;
-namespace SovChuck.Models
+﻿namespace SovChuck.Models
 {
 	public class Joke
 	{
