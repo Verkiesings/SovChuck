@@ -1,10 +1,14 @@
 ﻿<Properties StartupConfiguration="{768B88E7-D936-4F70-BEC2-FD86644572D1}|Default">
   <MonoDevelop.Ide.ItemProperties.SovChuck PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SovChuck/Views/Home/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SovChuck/Models/RootObject.cs">
     <Files>
       <File FileName="SovChuck/Controllers/HomeController.cs" Line="24" Column="10" />
       <File FileName="SovChuck/Views/Shared/_Layout.cshtml" Line="23" Column="30" />
       <File FileName="SovChuck/Views/Home/Index.cshtml" Line="4" Column="1" />
+      <File FileName="SovChuck/Models/Joke.cs" Line="2" Column="19" />
+      <File FileName="SovChuck/Models/JokeReult.cs" Line="4" Column="19" />
+      <File FileName="SovChuck/Models/People.cs" Line="3" Column="19" />
+      <File FileName="SovChuck/Models/RootObject.cs" Line="5" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,10 +16,11 @@
           <Node name="SovChuck" expanded="True">
             <Node name="SovChuck" expanded="True">
               <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="RootObject.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
+                <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
             </Node>

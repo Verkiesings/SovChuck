@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NyjlzbWsDOkl5BZ8mcjIPbTvQ3baa9hOJLViOKWNxT02pZdJW38f8TcU+hXbqeMl8izDUAGOSYFSbmWcC7ZMVQ==",
+  "dgSpecHash": "us0DVxvsGhKbclhnGCkmHdkA4V4eymB/njA8YmsnqyuW7MTuIzsRqpj/XUu5/EoMrhBGz+1YatFk79RXofwpHA==",
   "success": true,
   "projectFilePath": "/Users/dikgethophala/Documents/GitHub/SovChuck/SovChuck/SovChuck.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/dikgethophala/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
