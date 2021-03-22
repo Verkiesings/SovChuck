@@ -77,7 +77,7 @@ namespace SovChuck.Controllers
             }
             catch (Exception ex)
             {
-                throw new Exception("An error occured", ex);
+                return null; 
             }
         }
 
@@ -116,7 +116,7 @@ namespace SovChuck.Controllers
             }
             catch (Exception ex)
             {
-                throw new Exception("An error occured.", ex);
+                return null;
             }
         }
 

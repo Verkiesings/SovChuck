@@ -2,3 +2,36 @@
     ViewData["Title"] = "Home Page";
 }
 
+@{
+    var Joke = ViewBag.Joke;
+    var searchedJoke = ViewBag.SearchedJoke;
+    var getPeople = ViewBag.GetPeople;
+    var cats = ViewBag.GetCategories;
+}
+
+<h4>Select Category:</h4>
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Get))
+{
+    @Html.DropDownList("category", new SelectList(cats))
+    <input type="submit" value="Filter" />
+}
+
+<p>@Joke</p>
+<br />
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Get))
+{
+    @Html.TextBox("search")
+    <input type="submit" value="search" />
+}
+
+<br />
+<p>@searchedJoke</p>
+
+@foreach (var person in @getPeople)
+{
+    <p>@person.name</p>
+}
+
+
