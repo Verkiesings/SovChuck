@@ -13,25 +13,37 @@
 
 @using (Html.BeginForm("Index", "Home", FormMethod.Get))
 {
-    @Html.DropDownList("category", new SelectList(cats))
-    <input type="submit" value="Filter" />
+    @Html.DropDownList("category", new SelectList(cats), new { @class = "form-control" })
+    <input style="margin-top:10px;" id="form1" class="btn btn-primary" type="submit" value="Filter" />
 }
 
-<p>@Joke</p>
+<br />
+<div class="panel panel-default">
+    <div class="panel-body">
+        @Joke
+        @searchedJoke
+    </div>
+</div>
 <br />
 
 @using (Html.BeginForm("Index", "Home", FormMethod.Get))
 {
-    @Html.TextBox("search")
-    <input type="submit" value="search" />
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon3">Search for joke:</span>
+        </div>
+        @Html.TextBox("search", null, htmlAttributes: new { @class = "form-control" })
+    </div>
+    <input style="margin-top:10px;" id="form1" class="btn btn-success" type="submit" value="Search" />
 }
 
 <br />
-<p>@searchedJoke</p>
-
-@foreach (var person in @getPeople)
-{
-    <p>@person.name</p>
-}
+<h3>Star Wars poeple</h3>
+<ul class="list-group">
+    @foreach (var person in @getPeople)
+    {
+        <li class="list-group-item">@person.name</li>
+    }
+</ul>
 
 
